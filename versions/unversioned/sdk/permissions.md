@@ -60,7 +60,7 @@ async function checkMultiPermissions() {
   const { Permissions } = Expo;
   const { status, expires, permissions } = await Permissions.getAsync(Permissions.CALENDAR, Permissions.CONTACTS)
   if (status !== 'granted') {
-    alert('Hey! You heve not enabled selected permissions');
+    alert('Hey! You have not enabled selected permissions');
   }
 }
 ```
